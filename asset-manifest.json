@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/juke/static/css/main.5f361e03.chunk.css",
+    "main.js": "/juke/static/js/main.a143b239.chunk.js",
+    "main.js.map": "/juke/static/js/main.a143b239.chunk.js.map",
+    "runtime-main.js": "/juke/static/js/runtime-main.e855b510.js",
+    "runtime-main.js.map": "/juke/static/js/runtime-main.e855b510.js.map",
+    "static/js/2.fedd85b3.chunk.js": "/juke/static/js/2.fedd85b3.chunk.js",
+    "static/js/2.fedd85b3.chunk.js.map": "/juke/static/js/2.fedd85b3.chunk.js.map",
+    "index.html": "/juke/index.html",
+    "precache-manifest.fbdcbdb43471f28e6706383acedbd663.js": "/juke/precache-manifest.fbdcbdb43471f28e6706383acedbd663.js",
+    "service-worker.js": "/juke/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/juke/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.fedd85b3.chunk.js.LICENSE.txt": "/juke/static/js/2.fedd85b3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/juke/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e855b510.js",
+    "static/js/2.fedd85b3.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.a143b239.chunk.js"
+  ]
+}
