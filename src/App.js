@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap'; // import other reactstrap components here
 import logo from './logo.svg';
 import './App.css';
+import Plot from './plot.js';
 
 // Make sure to view as Babel syntax (not normal JavaScript syntax)
 
@@ -22,7 +23,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button color="danger" onClick={() => alert("It's a button from reactstrap!")}>Click me!</Button>
+        <Button color="danger" onClick={() => alert("Wow!")}>Click me!</Button>
         <p>
           You should check out&nbsp;
           <a 
@@ -43,6 +44,7 @@ function App() {
         >
           Learn React
         </a>
+        <Plot />
       </header>
     </div>
   );
