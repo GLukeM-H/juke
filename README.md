@@ -12,6 +12,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `npm deploy`
+
+Builds the current branch and deploys it to the gh-pages branch.<br />
+Go to [https://glukem-h.github.io/juke/](https://glukem-h.github.io/juke/) to view the deployed version.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
