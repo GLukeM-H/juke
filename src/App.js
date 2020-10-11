@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap'; // import other reactstrap components here
 import logo from './logo.svg';
 import './App.css';
-import Plot from './plot.js';
+import UploadPlot from './plot.js';
 
 // Make sure to view as Babel syntax (not normal JavaScript syntax)
 
@@ -20,9 +20,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <UploadPlot />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
         <Button color="danger" onClick={() => alert("Wow!")}>Click me!</Button>
         <p>
           You should check out&nbsp;
@@ -31,6 +33,7 @@ function App() {
             style={{display: 'inline'}}
             href="https://reactstrap.github.io/components/alerts/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             reactstrap
           </a>
@@ -44,7 +47,6 @@ function App() {
         >
           Learn React
         </a>
-        <Plot />
       </header>
     </div>
   );
