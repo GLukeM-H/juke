@@ -21,32 +21,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <UploadPlot />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <Button color="danger" onClick={() => alert("Wow!")}>Click me!</Button>
-        <p>
-          You should check out&nbsp;
-          <a 
-            className="App-link"
-            style={{display: 'inline'}}
-            href="https://reactstrap.github.io/components/alerts/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap
-          </a>
-          &nbsp;too if you wanna mess around with other components.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );

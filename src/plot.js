@@ -29,7 +29,7 @@ class UploadPlot extends React.Component {
 		var form = (
 			<Form>
 				<FormGroup>
-					<Label for="csv-data">Upload CSV data (only plots first 4 data points right now)</Label>
+					<Label for="csv-data">Upload CSV data</Label>
 					<Input id="csv-data" type="file" name="csv-data" accept=".csv"/>
 					<br />
 					<Button type="button" onClick={() => this.handleCSV()}>
@@ -49,52 +49,47 @@ class UploadPlot extends React.Component {
 class Plot extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			data: {
-				labels: ["Monday","Tuesday","Hayday","Cakeday"],
-				datasets: [
-					{
-						label: "a line",
-						fill: true,
-						lineTension: 0.5,
-						backgroundColor: "rgba(75,192,192,1)",
-						pointBackgroundColor: "rgba(0, 255, 100, 0.6)",
-						hoverBorderColor: "rgba(255, 255, 0, 1)",
-						pointRadius: 15,
-						borderColor: "rgba(0,0,0,1)",
-						borderWidth: 2,
-					}
-				]
-			},
-			options: {
-				title: {
-					display: true,
-					text: 'Testing react-chartjs-2',
-					fontSize: 20
-				},
-				legend: {
-					display: true,
-					position: 'right'
+		
+		this.data = {
+			labels: [],
+			datasets: [
+				{
+					label: "a line",
+					fill: true,
+					lineTension: 0.5,
+					backgroundColor: "rgba(75,192,192,1)",
+					pointBackgroundColor: "rgba(0, 255, 100, 0.6)",
+					hoverBorderColor: "rgba(255, 255, 0, 1)",
+					pointRadius: 15,
+					borderColor: "rgba(0,0,0,1)",
+					borderWidth: 2,
+					data: []
 				}
+			]
+		}
+		
+		this.options = {
+			title: {
+				display: true,
+				text: 'Testing react-chartjs-2',
+				fontSize: 20
+			},
+			legend: {
+				display: true,
+				position: 'right'
 			}
-
 		}
 	}
 
 
 	render() {
-		let data = {
-			...this.state.data,
-			datasets: [{
-				...this.state.data.datasets[0],
-				data: this.props.data}
-			]
-		}
-
+		this.data.datasets[0].data = this.props.data;
+		this.data.labels = [...Array(this.props.data.length).keys()];
+		
 		return (
 			<Line
-				data={data}
-				options={this.state.options}
+				data={this.data}
+				options={this.options}
 			/>
 		);
 	}
