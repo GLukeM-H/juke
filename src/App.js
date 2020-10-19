@@ -1,17 +1,10 @@
 import React from 'react';
-import { Button } from 'reactstrap'; // import other reactstrap components here
+import { 
+  Button, Card, CardBody, CardText
+} from 'reactstrap'; // import other reactstrap components here
 import logo from './logo.svg';
 import './App.css';
 import UploadPlot from './plot.js';
-
-// Make sure to view as Babel syntax (not normal JavaScript syntax)
-
-// Run local build (will auto update when you make an edit and save):
-// >npm start
-
-// Deploy to gh-pages branch: 
-// >npm deploy
-
 
 // Here's the app
 function App() {
